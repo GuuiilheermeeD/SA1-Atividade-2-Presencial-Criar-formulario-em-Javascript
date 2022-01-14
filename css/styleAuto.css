@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+html{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald' sans-serif;
+    background-color: rgba(102, 95, 95, 0.296);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0px;
+
+}
+
+#pagina{
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 30px 50px;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+
+}
+#botoes{
+    padding: 0 120px;
+    display:flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+#botoes a{
+    text-decoration: none;    
+}
+
+input{
+    display: block;
+    cursor: pointer;
+    margin: 5px;
+    width: auto;
+    height: 30px;
+    text-align: center;    
+    border-radius: 5px;
+    background-color: blue;
+    color: #ffffff;
+
+}

@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+    <form name="formulario" onsubmit="return validacaoAll();">
+      <label>
+        Nome:
+      </label>
+      <input id="name" placeholder='Nome Completo' type="text" minlength="10" maxlength="80">
+      <br>
+      <label>
+        Apelido:
+      </label>
+      <input id="nickname" placeholder=Usuário type="text" minlength="2" maxlength="20">
+      <br>
+      <label>
+        Data de nascimento:
+      </label>
+      <input id="day" placeholder='DD' type="text" maxlength="2">/
+      <input id="month" placeholder='MM' type="text" maxlength="2">/
+      <input id="year" placeholder='AAAA' type="text" maxlength="4">
+      <br>
+      <label>
+        CPF:
+      </label>
+      <input id="cpf" placeholder='XXX.XXX.XXX-XX' type="text" maxlength="14">
+      <br>
+
+      <div id="segundaCaixa">
+        <label>
+          Time do coração:
+        </label>
+        <select id="team_id" name="times">
+          <option id="0" value="0">Secione um Time</option>
+          <option id="1" value="1">Time 1</option>
+          <option id="2" value="1">Time 2</option>
+          <option id="100" value="1">Time N</option>
+        </select>
+
+
+        <br>
+        <div id="checkbox_id">
+          <label>
+            Esportes de interesse:
+          </label> <br>
+          <div class="check"><input type="checkbox" name="sport" id="1" onclick="checkBox()">Futebol</div>
+          <div class="check"><input type="checkbox" name="sport" id="2" onclick="checkBox()">Vôlei</div>
+          <div class="check"><input type="checkbox" name="sport" id="3" onclick="checkBox()">Basquete</div>
+          <div class="check"><input type="checkbox" name="sport" id="4" onclick="checkBox()">Futsal</div>
+          <div class="check"><input type="checkbox" name="sport" id="5" onclick="checkBox()">Automobilismo</div>
+          <div class="check"><input type="checkbox" name="sport" id="6" onclick="checkBox()">Artes Marciais</div>
+          <div class="check"><input type="checkbox" name="sport" id="7" onclick="checkBox()">Natação</div>
+        </div>
+
+
+        <input type="submit" name="btnSalvar">
+      </div>
+    </form>
+    <script src="javaScripit/script.js"></script>
+  </body>
+
+  </html>
